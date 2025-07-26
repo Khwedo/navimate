@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.oceanbyte.navimate.custom.ZoomDismissLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/photoViewerRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <eightbitlab.com.blurview.BlurView
+        android:id="@+id/blurBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/photoPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" />
+
+</com.oceanbyte.navimate.custom.ZoomDismissLayout>

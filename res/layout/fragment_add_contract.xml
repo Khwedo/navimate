@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    
+
+    <!-- Основной контент внутри ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editVessel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Название судна"
+                android:inputType="text"
+                android:layout_marginTop="12dp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/editPosition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Позиция"
+                android:inputType="text"
+                android:completionThreshold="1"/>
+
+            <TextView
+                android:id="@+id/editStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Дата начала контракта"
+                android:padding="12dp"
+                android:background="@drawable/bg_edittext"
+                android:layout_marginTop="12dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/editEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Дата окончания контракта"
+                android:padding="12dp"
+                android:background="@drawable/bg_edittext"
+                android:layout_marginTop="12dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <Button
+                android:id="@+id/btnSaveContract"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Сохранить контракт"
+                android:layout_marginTop="20dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

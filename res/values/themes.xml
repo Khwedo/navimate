@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NaviMate" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:colorBackground">@color/navy_background</item>
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/light_blue</item>
+        <item name="colorSecondaryVariant">@color/light_blue</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="textAppearanceHeadlineLarge">@style/CustomTextStyle</item>
+        <item name="textAppearanceBodyLarge">@style/CustomTextStyle</item>
+        <item name="textAppearanceLabelLarge">@style/CustomTextStyle</item>
+    </style>
+
+
+    <style name="Theme.NaviMate" parent="Base.Theme.NaviMate" />
+
+    <style name="TransparentDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+</resources>
+
+
+
+
+

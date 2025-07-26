@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Контур колокольчика -->
+    <path
+        android:fillColor="#FF6F00"
+        android:pathData="M12,2C10.34,2 9,3.34 9,5V6.68C6.16,7.65 4,10.11 4,13V18L2,20V21H22V20L20,18V13C20,10.11 17.84,7.65 15,6.68V5C15,3.34 13.66,2 12,2Z" />
+    <!-- Язычок -->
+    <path
+        android:fillColor="#FF6F00"
+        android:pathData="M13.73,21C13.55,21.59 13.06,22 12.44,22H11.55C10.94,22 10.45,21.59 10.26,21H13.73Z" />
+</vector>

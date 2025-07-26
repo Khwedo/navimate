@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/viewReportsRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Основной контент: поиск и список отчётов -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+         <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+             android:padding="10dp"
+             android:background="@color/colorPrimary">
+            <Button
+                android:id="@+id/btnWeekFilter"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="end"
+                android:src="@drawable/tune_24px"/>
+        <!-- Поиск -->
+            <EditText
+                android:id="@+id/searchInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/edit_text"
+                android:drawableStart="@android:drawable/ic_menu_search"
+                android:hint="Поиск"
+                android:inputType="text"/>
+
+
+         </LinearLayout>
+
+        <!-- Пустой список -->
+        <TextView
+            android:id="@+id/textEmptyReports"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Отчёты отсутствуют"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <!-- Список отчётов -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/reportRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="8dp"
+            android:clipToPadding="false"
+            android:paddingBottom="72dp" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+    <!-- FAB для добавления отчета -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/note_add_24px"
+        app:tint="@color/white"
+        android:contentDescription="@string/add_report" />
+
+    <!-- Кнопка экспорта (теперь тоже в правом нижнем углу, немного выше FAB) -->
+
+</FrameLayout>

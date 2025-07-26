@@ -1,0 +1,107 @@
+<resources>
+    <!-- Общие -->
+    <string name="app_name">NaviMate</string>
+    <string name="account_title">Account details</string>
+    <string name="email">Email</string>
+    <string name="save">Save</string>
+    <string name="confirm_delete_message">Вы уверены, что хотите удалить этот отчёт?</string>
+    <string name="delete">Delete</string>
+    <string name="export_pdf">Export to PDF</string>
+    <string name="fault_export_pdf">Ошибка при экспорте PDF</string>
+    <string name="export_word">Export to Word</string>
+    <string name="fault_export_word">Ошибка при экспорте Word</string>
+    <string name="add_report">Add report</string>
+    <string name="search_hint">Search by name or equipment</string>
+    <string name="max_photos">Maximun 3 photos</string>
+    <string name="compression_error">Fault resize picture</string>
+    <string name="fill_all_fields">Заполните все поля</string>
+    <string name="report_not_existing">Report not existing</string>
+    <string name="report_saved">Report saved</string>
+    <string name="photo_before">Photo BEFORE:</string>
+    <string name="photo_after">Photo After:</string>
+    <string name="date">Date:</string>
+    <string name="equipment">Equipment:</string>
+    <string name="job">Job:</string>
+    <string name="language">Language</string>
+
+    <!-- Регистрация / Вход -->
+    <string name="loading">Loading...</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="confirm_password_hint">Подтвердите пароль</string>
+    <string name="register">Register</string>
+    <string name="already_have_account">Уже есть аккаунт? Войти</string>
+
+    <!-- Фрагмент создания отчёта -->
+    <string name="equipment_name">Equipment</string>
+    <string name="job_title">Job description</string>
+    <string name="add_before_photo">Add photo BEFORE</string>
+    <string name="add_after_photo">Add photo AFTER</string>
+    <string name="saving_photo">Resize picture…</string>
+
+    <!-- Заголовки -->
+    <string name="week_label_format">Week %1$d, %2$s %3$d</string>
+
+
+    <!-- Меню -->
+    <string name="home">Home</string>
+    <string name="reports">Reports</string>
+    <string name="finance">Finance</string>
+    <string name="ai">AI</string>
+    <string name="settings">Settings</string>
+    <string name="settings_title">Settings</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_company">Company name</string>
+    <string name="hint_vessel">Vessel</string>
+    <string name="name">Name</string>
+    <string name="enter_new_name">Enter new name</string>
+    <string name="company">Company</string>
+    <string name="vessel">Vessel</string>
+    <string name="position">Position</string>
+    <string name="theme_title">Theme</string>
+    <string name="logout">Logout</string>
+    <string name="error_empty_name">Name can\'t be empty</string>
+    <string name="active_contract">Active Contract</string>
+    <string name="back">Back</string>
+    <string name="fault_launch_profile">Fault launch profile</string>
+    <string name="template_title">Шаблон отчета</string>
+    <string name="profile_saved">Profile saved</string>
+    <string name="error_no_uuid">Error no uuid</string>
+    <string name="name_saved_successfully">Name saved succesfully</string>
+    <string name="export_empty">No have reports for export</string>
+    <string name="export_complete">Reports exported</string>
+    <string name="choose_export_format">Please choose export format</string>
+    <string name="finish_export">Export complete</string>
+    <string name="export_to_pdf">Export to PDF</string>
+    <string name="export_to_word">Export to Word</string>
+    <string name="export_to_both_formats">Export to both formats</string>
+    <string name="profile_settings_empty">Please complete your settings</string>
+    <string name="message_sended">Message sended</string>
+    <string name="error">"Foult: "</string>
+    <string name="finish_export_pdf">Pdf exported</string>
+    <string name="finish_export_word">"ЭWord экспортирован: "</string>
+    <string name="deleted_successfully">Deleted successfully</string>
+    <string name="report_not_found">Отчёт не найден</string>
+    <string name="report_date">Дата: %1$s</string>
+    <string name="report_equipment">Оборудование: %1$s</string>
+    <string name="report_job_title">Работа: %1$s</string>
+    <string name="no_photos">Нет фото: %1$s</string>
+    <string name="pdf_exported">PDF экспортирован: %1$s</string>
+    <string name="word_exported">Word экспортирован: %1$s</string>
+    <string name="error_export_pdf">Ошибка при экспорте PDF</string>
+    <string name="error_export_word">Ошибка при экспорте Word</string>
+    <string name="report_deleted">Отчёт удалён</string>
+    <string name="confirm_delete_title">Удалить отчёт?</string>
+    <string name="cancel">Отмена</string>
+    <string name="label_before_photos">до</string>
+    <string name="label_after_photos">после</string>
+    <string name="selected">Selected</string>
+    <string name="template_loaded">Template loaded</string>
+    <string name="template_deleted">Template deleted</string>
+    <string name="template_not_found">Template not found</string>
+    <string name="template_delete_error">Template delete error</string>
+    <string name="template_not_loaded">Template nol loaded</string>
+    <string name="template_loaded_status">Template: template.docx</string>
+    <string name="only_docx_allowed">Only docx allowed</string>
+
+</resources>

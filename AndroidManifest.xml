@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.oceanbyte.navimate"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <!-- Разрешения -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <!-- Для Android 10+ (опционально, если работаешь с внешним хранилищем) -->
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="NaviMate"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NaviMate"
+
+       >
+
+        <!-- Стартовая активность -->
+        <activity android:name=".auth.LoginActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+        <!-- Остальные активности -->
+
+        <activity android:name=".view.MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.PhotoViewerActivity"
+            android:theme="@style/TransparentTheme"
+            android:exported="false" />
+
+        <activity android:name=".auth.RegisterActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.ReportDetailActivity"
+            android:screenOrientation="portrait"/>
+
+
+
+        <!-- Firebase (если используется) -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_launcher_foreground1" />
+
+        <!-- FileProvider-->
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!--Напоминание о работе-->
+        <receiver android:name=".notifications.ReminderReceiver"
+            android:exported="false" />
+        <receiver android:name=".notifications.SnoozeReceiver" android:exported="false"/>
+
+
+    </application>
+
+</manifest>

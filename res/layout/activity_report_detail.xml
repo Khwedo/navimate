@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reportDetailRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Информация -->
+        <TextView
+            android:id="@+id/textDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Дата:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textEquipment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Оборудование:" />
+
+        <TextView
+            android:id="@+id/textJobTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Работа:" />
+
+        <!-- Фото ДО -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Фото ДО:"
+            android:textStyle="bold"
+            android:paddingTop="12dp" />
+
+        <LinearLayout
+            android:id="@+id/beforePhotosContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <!-- Фото ПОСЛЕ -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Фото ПОСЛЕ:"
+            android:textStyle="bold"
+            android:paddingTop="12dp" />
+
+        <LinearLayout
+            android:id="@+id/afterPhotosContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+    <!-- ДОБАВЬ ЭТО в самый низ LinearLayout внутри ScrollView -->
+
+
+        <Button
+            android:id="@+id/btnExportPdf"
+            android:layout_weight="1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Экспорт в PDF" />
+
+        <Button
+            android:id="@+id/btnExportWord"
+            android:layout_weight="1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Экспорт в Word" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_weight="1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Удалить" />
+    </LinearLayout>
+
+</ScrollView>

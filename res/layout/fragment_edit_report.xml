@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:focusable="true">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarEditReport"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:navigationIcon="@drawable/ic_back"
+        app:title="Редактировать отчёт" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <!-- Название работы -->
+        <EditText
+            android:id="@+id/editJobTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/job_title"
+            android:inputType="textCapSentences"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Оборудование -->
+        <EditText
+            android:id="@+id/editEquipment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/equipment_name"
+            android:inputType="textCapSentences"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Кнопка "Добавить фото ДО" -->
+        <Button
+            android:id="@+id/btnAddBeforePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Добавить фото ДО"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Контейнер для фото ДО -->
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/containerBeforePhotos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:flexWrap="wrap"
+            app:justifyContent="flex_start" />
+
+        <!-- Кнопка "Добавить фото ПОСЛЕ" -->
+        <Button
+            android:id="@+id/btnAddAfterPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Добавить фото ПОСЛЕ"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Контейнер для фото ПОСЛЕ -->
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/containerAfterPhotos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:flexWrap="wrap"
+            app:justifyContent="flex_start" />
+
+        <EditText
+            android:id="@+id/editNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Заметка (не экспортируется)"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:maxLines="5"
+            android:gravity="top"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_edittext"
+            android:padding="12dp" />
+
+        <LinearLayout
+            android:id="@+id/reminderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:layout_marginTop="12dp">
+
+            <Button
+                android:id="@+id/btnSetReminder"
+                android:layout_width="wrap_content"
+                android:width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Установить напоминание" />
+
+            <Button
+                android:id="@+id/btnClearReminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Удалить" />
+
+            <TextView
+                android:id="@+id/textReminderTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="16dp"
+                android:text="Не установлено" />
+        </LinearLayout>
+
+
+        <!-- Кнопка Сохранить -->
+        <Button
+            android:id="@+id/btnSaveReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сохранить"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Кнопка Удалить -->
+        <Button
+            android:id="@+id/btnDeleteReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Удалить отчёт"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/holo_red_dark" />
+
+    </LinearLayout>  </LinearLayout>
+</ScrollView>

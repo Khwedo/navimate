@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/home"
+        android:icon="@drawable/home_24px"
+        android:title="@string/home"
+        app:itemIconTint="@color/nav_item_selector"
+        app:itemTextColor="@color/nav_item_selector"/>
+
+    <item android:id="@+id/reports"
+        android:icon="@drawable/report"
+        android:title="@string/reports"
+        app:itemIconTint="@color/nav_item_selector"
+        app:itemTextColor="@color/nav_item_selector"/>
+
+    <item android:id="@+id/finance"
+        android:icon="@drawable/money"
+        android:title="@string/finance"
+        app:itemIconTint="@color/nav_item_selector"
+        app:itemTextColor="@color/nav_item_selector"/>
+
+    <item android:id="@+id/ai"
+        android:icon="@drawable/text_fields_alt"
+        android:title="@string/ai"
+        app:itemIconTint="@color/nav_item_selector"
+        app:itemTextColor="@color/nav_item_selector"/>
+
+    <item android:id="@+id/settings"
+        android:icon="@drawable/settings"
+        android:title="@string/settings"
+        app:itemIconTint="@color/nav_item_selector"
+        app:itemTextColor="@color/nav_item_selector"/>
+</menu>

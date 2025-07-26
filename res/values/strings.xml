@@ -1,0 +1,179 @@
+<resources>
+    <!-- Общие -->
+    <string name="app_name">NaviMate</string>
+    <string name="save">Сохранить</string>
+    <string name="delete">Удалить</string>
+    <string name="export_pdf">Экспорт в PDF</string>
+    <string name="finish_export_pdf">PDF экспортирован: </string>
+    <string name="fault_export_pdf">Ошибка при экспорте PDF</string>
+    <string name="export_word">Экспорт в Word</string>
+    <string name="finish_export_word">ЭWord экспортирован: </string>
+    <string name="fault_export_word">Ошибка при экспорте Word</string>
+    <string name="add_report">Добавить отчёт</string>
+    <string name="search_hint">Поиск по названию или оборудованию</string>
+    <string name="max_photos">Максимум 6 фото</string>
+    <string name="compression_error">Ошибка при сжатии фото</string>
+    <string name="fill_all_fields">Заполните все поля</string>
+    <string name="report_not_existing">Отчёт не найден</string>
+    <string name="report_saved">Отчёт сохранён</string>
+    <string name="photo_before">Фото ДО:</string>
+    <string name="photo_after">Фото ПОСЛЕ:</string>
+    <string name="date">Дата:</string>
+    <string name="equipment">Оборудование:</string>
+    <string name="job">Работа:</string>
+    <string name="language">Язык</string>
+    <string name="loading">Загрузка…</string>
+
+
+    <!-- Регистрация / Вход -->
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Пароль</string>
+    <string name="confirm_password_hint">Подтвердите пароль</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="already_have_account">Уже есть аккаунт? Войти</string>
+
+    <!-- Фрагмент создания отчёта -->
+    <string name="equipment_name">Название оборудования</string>
+    <string name="job_title">Название работы</string>
+    <string name="add_before_photo">Добавить фото ДО</string>
+    <string name="add_after_photo">Добавить фото ПОСЛЕ</string>
+    <string name="saving_photo">Фото сжимается…</string>
+
+
+
+
+
+
+    <!-- Заголовки -->
+    <string name="week_label_format">Неделя %1$d, %2$s %3$d</string>
+
+
+    <!-- Меню -->
+    <string name="home">Главная</string>
+    <string name="reports">Отчеты</string>
+    <string name="finance">Финансы</string>
+    <string name="ai">Ассистент</string>
+    <string name="settings">Настройки</string>
+    <!-- Настройки -->
+    <string name="settings_title">Настройки</string>
+    <string name="hint_name">Введите Ваше имя</string>
+    <string name="hint_company">Введите компанию</string>
+    <string name="hint_vessel">ведите название судна</string>
+    <string name="name">Имя</string>
+    <string name="enter_new_name">Введите новое имя</string>
+    <string name="company">Компания</string>
+    <string name="vessel">Судно</string>
+    <string name="position">Должность</string>
+    <string name="theme_title">Оформление</string>
+    <string name="account_title">Учетная запись</string>
+    <string name="email">Почта</string>
+    <string name="logout">Выйти из аккаунта</string>
+    <string name="error_empty_name">Имя не может быть пустым</string>
+    <string name="active_contract">Активный контракт</string>
+    <string name="message_sended">Письмо отправлено</string>
+    <string name="error">Ошибка: </string>
+    <string name="fault_launch_profile">Не удалось загрузить профиль</string>
+    <string name="template_title">Шаблон отчета</string>
+    <string name="profile_saved">Профиль сохранен</string>
+    <string name="error_no_uuid">Ошибка: не удалось получить идентификатор пользователя</string>
+    <string name="name_saved_successfully">Имя успешно сохранено</string>
+    <string name="no_changes" translatable="false">Изменений не найдено</string>
+    <string name="error_uuid_missing" translatable="false">Ошибка: UUID пользователя не найден</string>
+    <string name="logout_confirm" translatable="false">Вы точно хотите выйти из аккаунта?</string>
+    <string name="yes" translatable="false">Да</string>
+    <string name="choose_weeks" translatable="false">Выберите неделю</string>
+    <string name="apply" translatable="false">Применить</string>
+    <string name="reset" translatable="false">Сбросить</string>
+
+
+
+    <!-- Фрагмент всех отчетов -->
+    <string name="export_empty">Ничего не выбрано для экспорта</string>
+    <string name="export_complete">Отчёты экспортированы</string>
+    <string name="profile_settings_empty">Заполните настройки профиля</string>
+    <string name="choose_export_format">Выберите формат экспорта</string>
+    <string name="finish_export">Экспорт завершён</string>
+    <string name="export_to_pdf">Экспорт в PDF</string>
+    <string name="export_to_word">Экспорт в Word</string>
+    <string name="export_to_both_formats">Экспорт в оба формата</string>
+    <string name="back">Назад</string>
+    <string name="selected">Выбрано</string>
+
+    <string name="no_reports_selected" translatable="false">Нет выбранных отчетов для удаления</string>
+    <string name="deleted_successfully">Удачно удалено</string>
+
+
+    <string name="report_not_found">Отчёт не найден</string>
+    <string name="report_date">Дата: %1$s</string>
+    <string name="report_equipment">Оборудование: %1$s</string>
+    <string name="report_job_title">Работа: %1$s</string>
+    <string name="no_photos">Нет фото: %1$s</string>
+    <string name="pdf_exported">PDF экспортирован: %1$s</string>
+    <string name="word_exported">Word экспортирован: %1$s</string>
+    <string name="error_export_pdf">Ошибка при экспорте PDF</string>
+    <string name="error_export_word">Ошибка при экспорте Word</string>
+    <string name="report_deleted">Отчёт удалён</string>
+    <string name="confirm_delete_title">Удалить отчёт?</string>
+    <string name="confirm_delete_message">Вы уверены, что хотите удалить этот отчёт?</string>
+
+    <string name="cancel">Отмена</string>
+    <string name="label_before_photos">до</string>
+    <string name="label_after_photos">после</string>
+    <!--Шаблон в настройках-->
+    <string name="template_loaded">Шаблон успешно загружен</string>
+    <string name="template_deleted">Шаблон удалён</string>
+    <string name="template_not_found">Шаблон не найден</string>
+    <string name="template_delete_error">Не удалось удалить шаблон</string>
+    <string name="template_not_loaded">Шаблон: не загружен</string>
+    <string name="template_loaded_status">Шаблон: template.docx</string>
+    <string name="only_docx_allowed">Можно загрузить только .docx файл</string>
+    <string name="take_photo" translatable="false">Сделать фото</string>
+    <string name="choose_from_gallery" translatable="false">Выбрать из галереи</string>
+    <string name="add_photo" translatable="false">Добавить фото</string>
+    <string name="remind_at" translatable="false">Напомнить в %1$s</string>
+    <string name="reminder_not_set" translatable="false">Не установлено</string>
+    <string name="reminder_deleted" translatable="false">Напоминание удалено</string>
+    <string name="report_created" translatable="false">Отчёт создан</string>
+    <string name="contract_not_loaded" translatable="false">Ошибка: контракт не загружен</string>
+    <string name="max_6_photos" translatable="false">Максимум 6 фото</string>
+
+
+    <string name="login_title" translatable="false">Navi mate</string>
+    <string name="email_field_desc" translatable="false">Логин</string>
+    <string name="password_field_desc" translatable="false">Пароль</string>
+    <string name="login_button_desc" translatable="false">Войти</string>
+    <string name="error_email_empty" translatable="false">Ошибка: Email пустой</string>
+    <string name="error_email_invalid" translatable="false">Ошибка: Email неправильный</string>
+    <string name="error_password_empty" translatable="false">Ошибка: пароль пуст</string>
+    <string name="error_password_short" translatable="false">Ошибка: пароль должен быть минимум 6 симфолов</string>
+    <string name="error_email_not_verified" translatable="false">Email не подтвержден</string>
+    <string name="error_login_failed" translatable="false">Неправильный логин</string>
+    <string name="reset_password_title" translatable="false">Сбросить пароль</string>
+    <string name="send" translatable="false">Отправить</string>
+    <string name="reset_email_sent" translatable="false">Отправить сброшенный пароль</string>
+    <string name="error_reset_failed" translatable="false">ошибка</string>
+    <string name="error_already_logged_in" translatable="false">Уже вошел</string>
+    <string name="login_button_text" translatable="false">Логин</string>
+    <string name="forgot_password_text" translatable="false">Забыли пароль?</string>
+    <string name="register_redirect_text" translatable="false">Зарегистрироваться</string>
+    <string name="progress_bar_desc" translatable="false">Загрузка</string>
+
+    <string name="error_name_empty" translatable="false">Имя пустое</string>
+    <string name="error_password_mismatch" translatable="false">Пароли не совпадают</string>
+    <string name="verify_email_message" translatable="false">Подтверди Емаил</string>
+    <string name="error_verification_failed" translatable="false">Ошибка верификации</string>
+    <string name="name_hint" translatable="false">Введите имя</string>
+    <string name="name_field_desc" translatable="false">Имя</string>
+    <string name="error_registration_failed" translatable="false">Ошибка регистрации</string>
+    <string name="confirm_password_field_desc" translatable="false">Подтвердите пароль</string>
+    <string name="register_button_text" translatable="false">Зарегистрироваться</string>
+    <string name="register_button_desc" translatable="false">Кнопка регистрации</string>
+    <string name="login_redirect_text" translatable="false">Уже есть аккаунт? Войти</string>
+    <string name="login_redirect_desc" translatable="false">Текст для перехода на страницу входа</string>
+
+
+
+
+
+
+</resources>

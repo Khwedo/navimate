@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Заголовок с кнопкой назад -->
+        <include layout="@layout/toolbar_header" />
+
+        <!-- Название судна -->
+        <EditText
+            android:id="@+id/editVessel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Название судна"
+            android:inputType="textCapWords"
+            android:layout_marginTop="16dp" />
+
+        <!-- Должность (с автозаполнением) -->
+        <AutoCompleteTextView
+            android:id="@+id/editPosition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Должность"
+            android:inputType="textCapWords"
+            android:layout_marginTop="12dp" />
+
+        <!-- Дата начала контракта (только для отображения) -->
+        <TextView
+            android:id="@+id/editStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Дата начала: 2025-06-04"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+
+        <!-- Дата окончания контракта (если есть) -->
+        <TextView
+            android:id="@+id/editEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Дата окончания: —"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+
+        <!-- Кнопка сохранения -->
+        <Button
+            android:id="@+id/btnSaveContract"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сохранить изменения"
+            android:layout_marginTop="24dp" />
+
+        <!-- Кнопка удаления контракта -->
+        <Button
+            android:id="@+id/btnDeleteContract"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Удалить контракт"
+            android:layout_marginTop="12dp"
+            android:textColor="@android:color/holo_red_dark" />
+
+    </LinearLayout>
+</ScrollView>
